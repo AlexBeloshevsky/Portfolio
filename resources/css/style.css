@@ -295,3 +295,41 @@ header {
 .sticky .logo-black { display: block}
 
 .sticky .main-nav { margin-top: 18px;}
+
+/* --------------------------------------------- */
+/* BIOGRAPHY */
+/* --------------------------------------------- */
+
+.section-bio .long-copy {
+    margin-bottom: 30px;
+}
+
+
+/* --------------------------------------------- */
+/* PROJECTS */
+/* --------------------------------------------- */
+
+.section-projects {
+    background-color: #f4f4f4;
+}
+
+.project-feature {
+    margin-bottom: 5px;
+}
+
+.section-projects .icon-big {
+    margin-bottom: 15px;
+}
+
+.icon-small {
+    color: #2196F3;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+    /* secrets to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
