@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  //$('#header').load('header.html'); 
-  //$('#footer').load('footer.html');
+  $('#project-header').load('../header.html'); 
+  $('#footer').load('footer.html');
+  $('#project-footer').load('../footer.html');
    
   /* For the sticky navigation */
     $('.js--section-bio').waypoint(function(direction) {
