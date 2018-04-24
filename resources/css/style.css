@@ -222,6 +222,7 @@ header {
     display: none;
     color: #000;
     float: left;
+    margin-top: 15px;
     margin: 5px 0;    
 }
 
@@ -261,7 +262,7 @@ header {
 
 .mobile-nav-icon {
     float: right;
-    margin-top: 30px;
+    margin-top: 10px;
     cursor: pointer;
     display: none;
 }
@@ -288,13 +289,15 @@ header {
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     color: #555;
-    padding: 16px 0px;
 }
 
 .sticky .logo { display: none;}
 .sticky .logo-black { display: block}
 
-.sticky .main-nav { margin-top: 18px;}
+.sticky .main-nav { 
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
 
 /* --------------------------------------------- */
 /* BIOGRAPHY */
@@ -467,4 +470,19 @@ footer p {
     text-align: center;
     font-size: 90%;
     margin-top: 20px;
+}
+
+/* --------------------------------------------- */
+/* ANIMATIONS */
+/* --------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2 {
+    opacity: 0;
+    animation-duration: 1.25s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated {
+    opacity: 1;
 }
