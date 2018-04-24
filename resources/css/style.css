@@ -337,6 +337,14 @@ header {
     margin-top: -5px;
 }
 
+.section-projects a:link,
+.section-projects a:visited,
+.section-projects a:hover,
+.section-projects a:active{
+    text-decoration: none;
+    color: #555;
+}
+
 /* --------------------------------------------- */
 /* FORM */
 /* --------------------------------------------- */
