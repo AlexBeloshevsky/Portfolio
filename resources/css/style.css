@@ -200,6 +200,11 @@ header {
     background-attachment: fixed;
 }
 
+#project-header {
+    background-color: #333;
+    height: 35px;
+}
+
 .hero-text-box{
     position: absolute;
     width: 1140px;
@@ -221,6 +226,13 @@ header {
 .logo-black {
     display: none;
     color: #000;
+    float: left;
+    margin-top: 15px;
+    margin: 5px 0;    
+}
+
+.logo-projects {
+    color: #fff;
     float: left;
     margin-top: 15px;
     margin: 5px 0;    
@@ -297,6 +309,46 @@ header {
 .sticky .main-nav { 
     margin-top: 5px;
     margin-bottom: 15px;
+}
+
+/*-----Projects nav-----*/
+
+.projects-nav-large,
+.projects-nav-small {
+    float: right;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.projects-nav-large li,
+.projects-nav-small li{
+    display: inline-block;
+    margin-left: 40px;
+    color: #fff;
+}
+
+.projects-nav-large li a:link,
+.projects-nav-large li a:visited,
+.projects-nav-small li a:link,
+.projects-nav-small li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0px;
+    transition: border-bottom 0.2s;
+}
+
+.projects-nav-large li a:hover,
+.projects-nav-large li a:active,
+.projects-nav-small li a:hover,
+.projects-nav-small li a:active {
+    border-bottom: 2px solid #2196F3;
+}
+
+.projects-nav-small {
+    display: none;
 }
 
 /* --------------------------------------------- */
@@ -404,6 +456,13 @@ footer {
     background-color: #333;
     padding: 50px;
     font-size: 80%;
+}
+
+#project-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-nav {

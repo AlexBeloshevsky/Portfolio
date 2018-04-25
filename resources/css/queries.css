@@ -87,6 +87,10 @@
         margin-bottom: 10px;
     }
     
+    footer {
+        padding: 10px;
+    }
+    
 }   
 
 
@@ -96,6 +100,12 @@
     .contact-form { width: 100%; }
     .main-nav {
         flex: auto;
+    }
+    .projects-nav-large {
+        display: none;
+    }
+    .projects-nav-small {
+        display: inline-block;
     }
 }
 
