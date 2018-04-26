@@ -17,24 +17,24 @@
   </head>
 
   <body>
-    <div id="project-header"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="project-footer"></div>
+    <div class="projects-page">
+      <div id="project-header"></div>
+        <h4>To-Do List</h4>
+        <div class="row">
+          <input type="text" class="project1-input" id="project1-input" placeholder="Some text...">
+        </div>
+        <div class="row">
+          <button class="project1-addButton js--project1-addButton"><i class="ion-plus-round"></i></button>
+        </div>
+        <ul id="list">
+		  <li contenteditable="true">
+		  <input type="checkbox" class="project1-checkbox js--project1-checkbox" contenteditable="false">
+		  For example: buy milk.
+		  <button class="project1-deleteButton js--project1-deleteButton" contenteditable="false"><i class="ion-close-round"></i></button>
+		  </li>
+		</ul>
+      <div id="project-footer"></div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../vendors/js/jquery.waypoints.min.js"></script>
     <script src="../resources/js/script.js"></script>

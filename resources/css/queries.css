@@ -91,6 +91,13 @@
         padding: 10px;
     }
     
+    input.project1-input {
+    width: 96%;
+    margin: 0 2%;
+    margin-bottom: 10px;
+    border-radius: 200px;
+    }
+    
 }   
 
 

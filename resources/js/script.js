@@ -68,35 +68,65 @@ $(document).ready(function() {
 
     /* Animation on scroll */
     $('.js--wp-1').waypoint(function(direction) {
-        $('.js--wp-1').addClass('animated fadeIn');
+      $('.js--wp-1').addClass('animated fadeIn');
     }, {
-        offset: '50%'
+      offset: '50%'
     });    
     
     $('.js--wp-2').waypoint(function(direction) {
-        $('.js--wp-2').addClass('animated fadeInUp');
+      $('.js--wp-2').addClass('animated fadeInUp');
     }, {
-        offset: '50%'
+      offset: '50%'
     });
     
     /* Mobile Nav */
     
     $('.js--nav-icon').click(function() {
-        var icon = $('.js--nav-icon i');
-        var nav = $('.js--main-nav');
+      var icon = $('.js--nav-icon i');
+      var nav = $('.js--main-nav');
         
-        nav.slideToggle(200);
-        if (icon.hasClass('ion-navicon-round')) {
-            icon.addClass('ion-close-round');
-            icon.removeClass('ion-navicon-round');
-        } else {
-            icon.addClass('ion-navicon-round');
-            icon.removeClass('ion-close-round');
-        }
+      nav.slideToggle(200);
+      if (icon.hasClass('ion-navicon-round')) {
+        icon.addClass('ion-close-round');
+        icon.removeClass('ion-navicon-round');
+      } else {
+        icon.addClass('ion-navicon-round');
+        icon.removeClass('ion-close-round');
+      }
     });    
     
     
+    /* PROJECT 1 - TO DO LIST */
     
+    function addToList() {
+      if ($("#project1-input").val() != "") {
+        var taskDescription = $("#project1-input").val();
+        $("#list").append(taskItem(taskDescription));
+        $("#project1-input").val("");
+      } else {
+        alert ("you need to write something!");
+      }
+    };
+    
+    function deleteFromList() {
+      $(this).parent().remove();    
+    };
+        
+        
+    function taskItem(value) {
+      return '<li contenteditable="true"><input type="checkbox" class="project1-checkbox js--project1-checkbox" contenteditable="false">' + value + '<button class="project1-deleteButton js--project1-deleteButton" contenteditable="false"><i class="ion-close-round"></i></button></li>'
+    };
+    
+    function strikeThrough() {
+      $(this).parent().toggleClass('project1-strikeThrough');   
+    }
+    
+    $('.js--project1-addButton').click(addToList);
+    $(document).on('click', '.js--project1-deleteButton', deleteFromList);
+    $(document).on('change', '.js--project1-checkbox', strikeThrough);
+
+    
+    /* PROJECT 2 - LOCALIZED WEATHER API */
     
     
 });

@@ -59,7 +59,7 @@ section {
 }
 
 /* ------------HEADINGS------------ */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -85,6 +85,14 @@ h3 {
     font-size: 110%;
     margin-bottom: 15px;
     text-align: center;
+}
+
+h4 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 30px;
+    letter-spacing: 1px;
 }
 
 h2:after {
@@ -202,7 +210,7 @@ header {
 
 #project-header {
     background-color: #333;
-    height: 35px;
+    height: 38px;
 }
 
 .hero-text-box{
@@ -459,10 +467,9 @@ footer {
 }
 
 #project-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-nav {
@@ -552,4 +559,54 @@ footer p {
 .js--wp-1.animated,
 .js--wp-2.animated {
     opacity: 1;
+}
+
+
+/* --------------------------------------------- */
+/* PROJECTS */
+/* --------------------------------------------- */
+
+.projects-page {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(img/project-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+input.project1-input {
+    width: 750px;
+    margin-bottom: 10px;
+    border-radius: 200px;
+}
+
+.project1-addButton,
+.project1-deleteButton {
+    background-color: #2196F3;
+    border: 1px solid #2196F3;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    margin-bottom: 25px;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.project1-deleteButton {
+    padding: 6px 18px;
+    margin-left: 15px;
+}
+
+.project1-addButton:hover,
+.project1-deleteButton:hover {
+    background-color: #1e7ac3;
+    border: 1px solid #1e7ac3;
+}
+
+.project1-strikeThrough {
+    text-decoration: line-through;
 }
