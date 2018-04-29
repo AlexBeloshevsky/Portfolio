@@ -128,5 +128,57 @@ $(document).ready(function() {
     
     /* PROJECT 2 - LOCALIZED WEATHER API */
     
+    var api, kelvin, city, country, weatherType, celcius, fahrenheit, tempswap;
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        alert("Geolocation is not supported by this browser.");
+      }
+    }
+    function showPosition(position) {
+      api = "https://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&appid=417adf22fba9a7d51b6505cc7f8086e1";
+      $.getJSON(api, function(data){
+        $("#city")[0].innerHTML = data.name;
+        $("#country")[0].innerHTML = data.sys.country;
+        $("#weatherType")[0].innerHTML = data.weather[0].description;
+        kelvin = data.main.temp;
+        celcius = Math.floor(kelvin - 273.15) + "&#8451";
+        fahrenheit = Math.floor(kelvin * 9 / 5 -459.67) + "&#8457";
+        $("#showTemp")[0].innerHTML = celcius;
+        tempswap = false;
+        $("#showTemp").click(function(){
+          if (tempswap === false) {
+            $("#showTemp")[0].innerHTML = fahrenheit;
+            tempswap = true;
+          } else {
+            $("#showTemp")[0].innerHTML = celcius;
+            tempswap = false;
+          }
+        })
+          if (data.weather[0].description === "few clouds") {
+          $('#weatherImage').attr('src','http://openweathermap.org/img/w/02d.png'); 
+          } else if (data.weather[0].description === "clear sky") {
+          $('#weatherImage').attr('src','http://openweathermap.org/img/w/01d.png');
+          } else if (data.weather[0].description === "scattered clouds") {
+          $('#weatherImage').attr('src','http://openweathermap.org/img/w/03d.png');
+          } else if (data.weather[0].description === "broken clouds") {
+          $('#weatherImage').attr('src','http://openweathermap.org/img/w/04d.png');
+          } else if (data.weather[0].description === "shower rain") {
+          $('#weatherImage').attr('src','http://openweathermap.org/img/w/09d.png');
+          } else if (data.weather[0].description === "rain") {
+          $('#weatherImage').attr('src','http://openweathermap.org/img/w/10d.png');
+          } else if (data.weather[0].description === "thunderstorm") {
+          $('#weatherImage').attr('src','http://openweathermap.org/img/w/11d.png');
+          } else if (data.weather[0].description === "snow") {
+          $('#weatherImage').attr('src','http://openweathermap.org/img/w/13d.png');
+          } else if (data.weather[0].description === "mist") {
+          $('#weatherImage').attr('src','http://openweathermap.org/img/w/50d.png');
+          }
+      })  
+    }
+    getLocation();
+
     
 });

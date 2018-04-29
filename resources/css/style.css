@@ -576,6 +576,8 @@ footer p {
     background-position: center;
 }
 
+/* PROJECT 1 */
+
 input.project1-input {
     width: 750px;
     margin-bottom: 10px;
@@ -609,4 +611,14 @@ input.project1-input {
 
 .project1-strikeThrough {
     text-decoration: line-through;
+}
+
+/* PROJECT 2 */
+
+#showTemp {
+    color: blue;
+}
+
+#showTemp:hover {
+    text-decoration: underline;
 }
