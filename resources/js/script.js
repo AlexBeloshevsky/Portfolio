@@ -157,25 +157,25 @@ $(document).ready(function() {
             tempswap = false;
           }
         })
-          if (data.weather[0].description === "few clouds") {
+        if (data.weather[0].description === "few clouds") {
           $('#weatherImage').attr('src','http://openweathermap.org/img/w/02d.png'); 
-          } else if (data.weather[0].description === "clear sky") {
+        } else if (data.weather[0].description === "clear sky") {
           $('#weatherImage').attr('src','http://openweathermap.org/img/w/01d.png');
-          } else if (data.weather[0].description === "scattered clouds") {
+        } else if (data.weather[0].description === "scattered clouds") {
           $('#weatherImage').attr('src','http://openweathermap.org/img/w/03d.png');
-          } else if (data.weather[0].description === "broken clouds") {
+        } else if (data.weather[0].description === "broken clouds") {
           $('#weatherImage').attr('src','http://openweathermap.org/img/w/04d.png');
-          } else if (data.weather[0].description === "shower rain") {
+        } else if (data.weather[0].description === "shower rain") {
           $('#weatherImage').attr('src','http://openweathermap.org/img/w/09d.png');
-          } else if (data.weather[0].description === "rain") {
+        } else if (data.weather[0].description === "rain") {
           $('#weatherImage').attr('src','http://openweathermap.org/img/w/10d.png');
-          } else if (data.weather[0].description === "thunderstorm") {
+        } else if (data.weather[0].description === "thunderstorm") {
           $('#weatherImage').attr('src','http://openweathermap.org/img/w/11d.png');
-          } else if (data.weather[0].description === "snow") {
+        } else if (data.weather[0].description === "snow") {
           $('#weatherImage').attr('src','http://openweathermap.org/img/w/13d.png');
-          } else if (data.weather[0].description === "mist") {
+        } else if (data.weather[0].description === "mist") {
           $('#weatherImage').attr('src','http://openweathermap.org/img/w/50d.png');
-          }
+        }
       })  
     }
     getLocation();
