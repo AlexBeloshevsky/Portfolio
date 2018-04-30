@@ -199,6 +199,23 @@ $(document).ready(function() {
         })
     })
     
+    /* PROJECT 4 - QUOTES ON TWITTER */
+    
+    var result, quoteArray;
+    
+    quoteArray = ['"Holy flying fuck, that thing took off!" - Elon Musk', '"It would be an incredible adventure. And life needs to be more than just solving every day problems. You need to wake up and be excited about the future" - Elon Musk', '"If things are not failing, you are not innovating enough." - Elon Musk', '"In terms of the Internet, it\'s like humanity acquiring a collective nervous system. Whereas previously we were more like a... collection of cells that communicated by diffusion. With the advent of the Internet, it was suddenly like we got a nervous system. It\'s a hugely impactful thing." - Elon Musk', '"I think we have a duty to maintain the light of consciousness to make sure it continues into the future." - Elon Musk', '"Sooner or later, we must expand life beyond our little blue mud ball--or go extinct." - Elon Musk', '"I would like to die on Mars; just not on impact." - Elon Musk', '"Rocket tech applied to a car opens up revolutionary possibilities." - Elon Musk', '"Every person in your company is a vector. Your progress is determined by the sum of all vectors." - Elon Musk', '“When something is important enough, you do it even if the odds are not in your favour.” - Elon Musk']
+    
+    result = '“When something is important enough, you do it even if the odds are not in your favour.” - Elon Musk';
+    
+    $("#js--project4-tweetQuote").click(function(){
+      window.open(href="https://twitter.com/intent/tweet?text="+ result + "");
+    })
+    
+    $("#js--project4-randomQuote").click(function(){
+      result = quoteArray[Math.floor(Math.random() * quoteArray.length)];
+      $("#js--project4-quoteResult").text(result);
+    })
+    
 });
 
 

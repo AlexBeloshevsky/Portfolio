@@ -660,3 +660,29 @@ input.project3-input:focus {
 .searchResultList {
     padding-bottom: 300px;
 }
+
+/* PROJECT 3 */
+
+.project4-randomQuoteButton,
+.project4-tweetQuoteButton {
+    background-color: #2196F3;
+    border: 1px solid #2196F3;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    margin-bottom: 25px;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.project4-randomQuoteButton:hover,
+.project4-tweetQuoteButton:hover {
+    background-color: #1e7ac3;
+    border: 1px solid #1e7ac3;
+}
+
+.project4-quoteResult {
+    margin-bottom: 35px;
+}
