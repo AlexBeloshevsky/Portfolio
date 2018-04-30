@@ -468,7 +468,7 @@ footer {
 
 #project-footer {
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
@@ -621,4 +621,42 @@ input.project1-input {
 
 #showTemp:hover {
     text-decoration: underline;
+}
+
+/* PROJECT 3 */
+
+input.project3-input {
+    width: 500px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: width 0.2s;
+}
+
+input.project3-input:focus {
+    width: 650px;
+    margin-bottom: 10px;
+}
+
+.project3-searchButton,
+.project3-randomButton {
+    background-color: #2196F3;
+    border: 1px solid #2196F3;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    margin-bottom: 25px;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.project3-searchButton:hover,
+.project3-randomButton:hover {
+    background-color: #1e7ac3;
+    border: 1px solid #1e7ac3;
+}
+
+.searchResultList {
+    padding-bottom: 300px;
 }

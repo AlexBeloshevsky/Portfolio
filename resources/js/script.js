@@ -99,10 +99,10 @@ $(document).ready(function() {
     /* PROJECT 1 - TO DO LIST */
     
     function addToList() {
-      if ($("#project1-input").val() != "") {
-        var taskDescription = $("#project1-input").val();
+      if ($("#js--project1-input").val() != "") {
+        var taskDescription = $("#js--project1-input").val();
         $("#list").append(taskItem(taskDescription));
-        $("#project1-input").val("");
+        $("#js--project1-input").val("");
       } else {
         alert ("you need to write something!");
       }
@@ -128,7 +128,7 @@ $(document).ready(function() {
     
     /* PROJECT 2 - LOCALIZED WEATHER API */
     
-    var api, kelvin, city, country, weatherType, celcius, fahrenheit, tempswap;
+    var project2API, kelvin, city, country, weatherType, celcius, fahrenheit, tempswap;
     
     function getLocation() {
       if (navigator.geolocation) {
@@ -138,8 +138,8 @@ $(document).ready(function() {
       }
     }
     function showPosition(position) {
-      api = "https://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&appid=417adf22fba9a7d51b6505cc7f8086e1";
-      $.getJSON(api, function(data){
+      project2API = "https://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&appid=417adf22fba9a7d51b6505cc7f8086e1";
+      $.getJSON(project2API, function(data){
         $("#city")[0].innerHTML = data.name;
         $("#country")[0].innerHTML = data.sys.country;
         $("#weatherType")[0].innerHTML = data.weather[0].description;
@@ -179,6 +179,60 @@ $(document).ready(function() {
       })  
     }
     getLocation();
-
+    
+    /* PROJECT 3 - WIKIPEDIA SEARCH */
+    
+    var searchWord, project3API;
+    
+    $("#js--project3-randomButton").click(function(){
+        window.open("https://en.wikipedia.org/wiki/Special:Random");
+    })
+    
+    $("#js--project3-searchButton").click(function(){
+        $("#js--project3-searchResultList").empty();
+        searchWord = $("#js--project3-input").val();
+        project3API = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchWord + "&limit=10&format=json&callback=?"
+        $.getJSON(project3API, function(data){
+            for (i = 0; i < 10; i++) {
+                $("#js--project3-searchResultList").append("<li><a target='_blank' href="+ data[3][i] + ">"+ data[1][i]+ "</a> - "+ data[2][i] + "</li>");
+            }
+        })
+    })
     
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
