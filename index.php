@@ -32,7 +32,7 @@
         </div>
       </nav>
       <div class="hero-text-box">
-        <h1>A junior front-end dev.<br>With 4 years of marketing experience.</h1>
+        <h1>A junior front-end dev.<br>With 4 years of online marketing experience.</h1>
         <a class="btn btn-full js--scroll-to-bio" href="#bio">Biography</a>
         <a class="btn btn-ghost js--scroll-to-projects" href="#projects">Projects</a>
       </div>
@@ -40,7 +40,7 @@
       
     <section class="section-bio js--section-bio" id="bio">
       <div class="row">
-        <h2>A Junior web developer with marketing experience</h2>
+        <h2>A Junior web developer with online marketing experience</h2>
         <p class="long-copy">
                 Hello, I'm Alex, your new junior front-end developer. I have taught myself front-end technologies such as HTML5, CSS3, JavaScript and jQuery using the power of the internet. I also bring with me extansive online marketing experience handling PPC budgets in the USD 6 figure range (monthly).
         </p>

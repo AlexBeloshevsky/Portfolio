@@ -8,7 +8,7 @@
 
     // Check the data.
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://alexbeloshevskystesthosting-com.stackstaging.com/omnifood/index.php?success=-1#form");
+        header("Location: http://alexbeloshevsky.com/index.php?success=-1#form");
         //********** CHANGE THIS!
         exit;
     }
@@ -25,13 +25,17 @@
     $email_content .= "Message:\n$message\n";
 
     // Build the email headers.
-    $email_headers = "From: $name <$email>";
+    $email_headers = "From: $name <$email>\r\n";
+    $email_headers .= "MIME-Version: 1.0\r\n";
+    $email_headers .= "Content-type: text/html; charset-utf-8;"
+
 
     // Send the email.
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Redirect to the index.html page with success code
-    header("Location: http://alexbeloshevskystesthosting-com.stackstaging.com/omnifood/index.php?success=1#form");
+    header("Location: http://alexbeloshevsky.com/index.php?success=1#form");
     //********** CHANGE THIS!
+
 
 ?>
