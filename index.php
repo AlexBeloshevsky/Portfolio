@@ -42,7 +42,7 @@
       <div class="row">
         <h2>A Junior web developer with online marketing experience</h2>
         <p class="long-copy">
-                Hello, I'm Alex, your new junior front-end developer. I have taught myself front-end technologies such as HTML5, CSS3, JavaScript and jQuery using the power of the internet. I also bring with me extansive online marketing experience handling PPC budgets in the USD 6 figure range (monthly).
+                Hello, I'm Alex, your new junior front-end developer. I have taught myself front-end technologies such as HTML5, CSS3, JavaScript and jQuery using the power of the internet. I also bring with me extensive online marketing experience handling PPC budgets of upwards of USD 250,000 (monthly).
         </p>
       </div>
 
