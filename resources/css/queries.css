@@ -24,82 +24,6 @@
     .project-feature{ font-size: 90%;}
         .contact-form { width: 90%;}
     
-    .btn:hover,
-    .btn:active,
-    input[type=submit]:hover,
-    input[type=submit]:active {
-        background-color: #2196F3;
-    }
-
-    .btn-full:hover,
-    .btn-full:active, {
-        border: 1px solid #2196F3;
-    }
-
-    .btn-ghost:hover,
-    .btn-ghost:active {
-        border: 1px solid #2196F3;
-        color: #2196F3;
-    }
-        
-    a:hover, 
-    a:active {
-    color: #2196F3;
-    border-bottom: 1px solid #2196F3;
-    }
-    
-    .main-nav li a:hover,
-    .main-nav li a:active {
-        border-bottom: 2px solid transparent;
-    }
-    
-    .projects-nav-large li a:hover,
-    .projects-nav-large li a:active,
-    .projects-nav-small li a:hover,
-    .projects-nav-small li a:active {
-        border-bottom: 2px solid transparent;
-    }
-    
-    .footer-nav li a:hover,
-    .footer-nav li a:active,
-    .social-links li a:hover,
-    .social-links li a:active {
-        color: #888;
-    }
-    
-    .ion-social-facebook:hover {
-    color: #888;
-    }
-
-    .ion-social-twitter:hover {
-        color: #888;
-    }
-    .ion-social-linkedin:hover {
-        color: #888;
-    }
-    
-    .project1-addButton:hover,
-    .project1-deleteButton:hover {
-        background-color: #2196F3;
-        border: 1px solid #2196F3;
-    }
-    
-    #showTemp:hover {
-        text-decoration: none;
-    }
-    
-    .project3-searchButton:hover,
-    .project3-randomButton:hover {
-        background-color: #2196F3;
-        border: 1px solid #2196F3;
-    }
-    
-    .project4-randomQuoteButton:hover,
-    .project4-tweetQuoteButton:hover {
-        background-color: #2196F3;
-        border: 1px solid #2196F3;
-    }
-
 }
 
 
@@ -187,6 +111,82 @@
         margin: 0 2%;
         margin-bottom: 10px;
         border-radius: 200px;
+    }
+    
+    .btn:hover,
+    .btn:active,
+    input[type=submit]:hover,
+    input[type=submit]:active {
+        background-color: #2196F3;
+    }
+
+    .btn-full:hover,
+    .btn-full:active, {
+        border: 1px solid #2196F3;
+    }
+
+    .btn-ghost:hover,
+    .btn-ghost:active {
+        border: 1px solid #2196F3;
+        color: #2196F3;
+    }
+        
+    a:hover, 
+    a:active {
+    color: #2196F3;
+    border-bottom: 1px solid #2196F3;
+    }
+    
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        border-bottom: 2px solid transparent;
+    }
+    
+    .projects-nav-large li a:hover,
+    .projects-nav-large li a:active,
+    .projects-nav-small li a:hover,
+    .projects-nav-small li a:active {
+        border-bottom: 2px solid transparent;
+    }
+    
+    .footer-nav li a:hover,
+    .footer-nav li a:active,
+    .social-links li a:hover,
+    .social-links li a:active {
+        color: #888;
+    }
+    
+    .ion-social-facebook:hover {
+    color: #888;
+    }
+
+    .ion-social-twitter:hover {
+        color: #888;
+    }
+    .ion-social-linkedin:hover {
+        color: #888;
+    }
+    
+    .project1-addButton:hover,
+    .project1-deleteButton:hover {
+        background-color: #2196F3;
+        border: 1px solid #2196F3;
+    }
+    
+    #showTemp:hover {
+        text-decoration: none;
+    }
+    
+    .project3-searchButton:hover,
+    .project3-randomButton:hover {
+        background-color: #2196F3;
+        border: 1px solid #2196F3;
+    }
+    
+    .project4-randomQuoteButton:hover,
+    .project4-tweetQuoteButton:hover {
+        background-color: #2196F3;
+        border: 1px solid #2196F3;
     }
     
 }   

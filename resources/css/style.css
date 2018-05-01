@@ -285,11 +285,13 @@ header {
     margin-top: 10px;
     cursor: pointer;
     display: none;
+    border-bottom: none;
 }
 
 .mobile-nav-icon i {
     font-size: 200%;
     color: #fff;
+    border-bottom: none;
 }
 
 
