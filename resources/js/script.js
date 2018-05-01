@@ -93,7 +93,17 @@ $(document).ready(function() {
         icon.addClass('ion-navicon-round');
         icon.removeClass('ion-close-round');
       }
-    });    
+    }); 
+    
+    /* Prevent mobile resizing */
+
+    if(/Android/.test(navigator.appVersion)) {
+       window.addEventListener("resize", function() {
+         if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA") {
+           document.activeElement.scrollIntoView();
+         }
+      })
+    }
     
     
     /* PROJECT 1 - TO DO LIST */

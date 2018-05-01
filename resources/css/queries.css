@@ -134,7 +134,7 @@
     a:hover, 
     a:active {
     color: #2196F3;
-    border-bottom: 1px solid #2196F3;
+    border-bottom: 1px solid transparent;
     }
     
     .main-nav li a:hover,
