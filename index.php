@@ -55,7 +55,7 @@
           </p>
         </div>
         <div class="col span-1-of-4 box">
-          <i class="ion-social-github-outline icon-big"></i>
+          <a href="https://github.com/AlexBeloshevsky/Portfolio"><i class="ion-social-github-outline icon-big"></i></a>
           <h3>Self learning &mdash; projects</h3>
           <p>
           I believe that the best way to learn is by experimentation, and I have therefore made it a priority to learn by building front-end projects. The next section shows several of my projects with brief explanations on the techniques used and lessons I have learned.
@@ -70,9 +70,9 @@
         </div>
         <div class="col span-1-of-4 box">
           <i class="ion-connection-bars icon-big"></i>
-          <h3>The future - PHP and more projects</h3>
+          <h3>The future - more projects</h3>
           <p>
-          I believe that life is full of learning opportunities. In the near future I plan on deepening my knowledge by taking a course on PHP and trying to build more and larger projects. Perhaps a website which allows families to share and edit together shopping lists?
+          I believe that life is full of learning opportunities. In the near future I plan on deepening my knowledge by building more and larger projects. Perhaps a website which allows families to share and edit together shopping lists?
           </p>
         </div>
       </div>
