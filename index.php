@@ -72,7 +72,7 @@
           <i class="ion-connection-bars icon-big"></i>
           <h3>The future - PHP and more projects</h3>
           <p>
-          I believe that life is full of learning opportunities. In the near future I plan on deepening my knowledge by taking a course on PHP and trying to build more and larger projects. Perhaps a website which allows famalies to share and edit together shopping lists?
+          I believe that life is full of learning opportunities. In the near future I plan on deepening my knowledge by taking a course on PHP and trying to build more and larger projects. Perhaps a website which allows families to share and edit together shopping lists?
           </p>
         </div>
       </div>
